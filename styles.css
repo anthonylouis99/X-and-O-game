@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway",sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg,#8052ec,#d161ff);
+  flex-direction: column;
+}
+.end-game{
+  height: 100vh;
+  width:100%;
+  background-image: linear-gradient(135deg,#8052ec,#d161ff);
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:1em;
+}
+.end-text{
+  border: 5px solid blue;
+  height: 50vh;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 70vh;
+  gap:1em;
+}
+.container{
+display: grid;
+grid-template-rows:1fr 1fr 1fr;
+grid-template-columns:1fr 1fr 1fr;
+gap:1em;
+width: 50vh;
+
+}
+.button{
+  font-size: 50px;
+  border-radius: 10px;
+  border: none;
+  min-height:1.3em ;
+  min-width: 1.2em;
+}
+.X-hover:hover::after{
+  content: "X";
+  color: green;
+  opacity: 0.5;
+}
+.O-hover:hover::after{
+  content: "O";
+  color: green;
+  opacity: 0.5;
+}
+.Restart{
+  display: inline-block;
+  border-radius: 8px;
+  min-height: 2em;
+  min-width: 2em;
+font-size: 20px;
+padding: 2px;
+}
+.winner{
+  background-color: green;
+  color: blue;
+}
+.invisible{
+  visibility: hidden;
+  display: none;
+}
